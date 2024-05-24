@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+html{
+  font-size: 10px;
+}
+body{
+    font-family: "Lora", serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+}
+.logo{
+  margin-top: 2.4rem;
+}
+.logo p{
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+   font-family: "Schibsted Grotesk", sans-serif;
+}
+
+
+
+/* Nav Css  */
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+
+}
+ul li a{
+  text-decoration: none;
+ font-family: "Schibsted Grotesk", sans-serif;
+ font-size: 1.6rem;
+ line-height: 1.9rem;
+ font-weight: 700;
+
+}
+ul li a:hover{
+  text-decoration: underline;
+}
+.header-wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 40px;
+}
+.navigation-area{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.2rem;
+}
+.mobile-menu{
+  display: none;
+}
+
+.btn-icon{
+  position: relative;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  cursor: pointer;
+  border: 1px solid#000;
+  border-radius: 1rem;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3 ease;
+margin-top: 1rem;
+  text-align: center;
+}
+.btn-icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+.btn-icon::after{
+ font-size: 2.4rem;
+ opacity: 0;
+ transition: opacity 0.3 ease;
+}
+.btn-icon:hover::after{
+  opacity: 1;
+}
+.user-btn::after{
+  content: "\1f464"; 
+}
+
+.home-btn::after{
+  content: "\1F3E0";
+}
+.arrow-btn::after{
+  content: "\2192";
+}
+.btn-1{
+  padding: 10px 15px;
+   font-family: "Schibsted Grotesk", sans-serif;
+  color: black;
+  border: 1px solid #000;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+ margin-left: 4rem;
+ border-radius: 10px;
+  font-weight: 700;
+    font-style: bold;
+    margin-top: 4rem;
+    
+}
+
+/* Hero style  */
+.btn-1:hover{
+  background: black;
+  color: #fff;
+
+  
+}
+.hero-area h1{
+ font-size: 9.6rem;
+ line-height: 9.6rem;
+ font-weight: 700;
+ font-style: normal;
+ color: #000;
+ font-family: "Schibsted Grotesk", sans-serif;
+ margin-left: 3.2rem;
+}
+.hero-area span{
+   font-size: 9.6rem;
+ line-height: 9.6rem;
+font-weight: 400;
+ color: #000;
+  font-family: "Lora", serif; 
+}
+.hero-area p{
+   font-size: 2.4rem;
+ line-height: 3.2rem;
+ font-weight: 400;
+ font-family: "Schibsted Grotesk", sans-serif;
+ margin-top: 2rem;
+  margin-left: 3.2rem;
+}
+.hero-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+.social-area i{
+  padding: 0 10px;
+  font-size: 18px;
+  margin-top: 4rem;
+  padding-top: 10px; 
+  margin: 0 5px;
+}
+i{
+  border: 1px solid#000;
+  padding: 5px 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #000;
+}
+.arrow-btn:hover{
+background-color: white;
+color: #000;
+}
+
+
+/* Animation Area styling */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite;     
+}
+
+.slide {
+    width: 250px;
+    flex-shrink: 0;
+    height: 250px;
+    margin-right: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 4)); } 
+}
+
+/* branding area styling */
+
+.branding-section{
+  margin-top: 3rem;
+}
+.branding-section h2{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+   font-family: "Schibsted Grotesk", sans-serif;
+   color: #000;
+   margin-left: 6rem;
+}
+.branding-logo-name{
+  display: grid;
+grid-template-columns: repeat(5,1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 3rem
+
+}
+
+
+.service-content{
+  margin-top: 6rem;
+}
+
+/* project area styling */
+.project-area{
+  margin-top: 3rem;
+}
+.project-area h4{
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-style: italic;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  margin-left: 3rem;
+}
+.project-area h2{
+  font-size: 6.4rem;
+  line-height: 7.2rem; 
+  font-family:  "Schibsted Grotesk", sans-serif;
+  font-weight: 700;
+  margin-left: 3rem;
+}
+.project-area p{
+  font-size: 2.4rem;
+  line-height: 3.2rem; 
+   font-family:  "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.arrow-icon i{
+padding-top: 1.5rem;
+padding-left: 1.3rem;
+position: relative;
+}
+.arrow-icon {
+	position: absolute;
+	top: 145%;
+	left: 76%;
+}
+.pro-img img{
+  padding-left: 3rem;
+  width: 90%;
+  height: auto;
+}
+.btn-grp{
+  margin: 2rem;
+}
+
+
+.btn-grp{
+  padding: 6px 12px;
+  border: 1px solid#000;
+  border-radius: 10px;
+font-size: 1.4rem;
+line-height: 2.4rem;
+font-family:  "Schibsted Grotesk", sans-serif;
+margin-top: 2rem;
+font-weight: bold;
+}
+.btn-grp:hover{
+  background: black;
+  color: #fff;
+}
+
+.project-content h3{
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+  font-family:  "Schibsted Grotesk", sans-serif;
+  margin-left: 3rem;
+}
+.project-content p{
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  font-family:  "Schibsted Grotesk", sans-serif;
+  margin-left: 3rem;
+}
+
+
+
+/* footer area */
+#footer-section{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  place-content: center;
+  margin-left: 60px;
+}
+#footer-content-2 h5:hover{
+  text-decoration: underline;
+}
+.footer-area h3{
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  font-family:  "Schibsted Grotesk", sans-serif;
+margin-left: 3rem;
+}
+#copyright-area{
+    display: grid;
+  grid-template-columns: repeat(2,1fr);
+   gap: 30px;
+   margin-left: 60px;
+   margin-top: 30px;
+}
+#copyright-section-2{
+  display: flex;
+  gap: 10px;
+}
+
+/* responsive css */
+
+@media (max-width:1200px) {
+.mobile-menu{
+  display: block;
+}
+.mobile-menu i{
+  padding-top: 15px;
+  padding-left: 16px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+  section{
+    padding: 0 2rem;
+  }
+  .navigation-area{
+    display: none;
+  }
+  .hero-area h1{
+    font-size: 72px;
+  }
+  .hero-area p{
+    font-size: 24px;
+  }
+  .project-area {
+    font-size: 6.4rem;
+  }
+}
+@media (max-width:876px) {
+  .branding-logo-name{
+    grid-template-columns: repeat(3,1fr);
+  }
+.arrow-icon {
+	position: absolute;
+	top: 123%;
+	left: 76%;
+}
+#copyright-section-2{
+  flex-direction: column;
+}
+#footer-section{
+  grid-template-columns: repeat(1,1fr);
+}
+}
+@media (max-width:706px) {
+ .arrow-icon {
+	position: absolute;
+	top: 140%;
+	left: 76%;
+}
+.btn-colloection{
+ display: block;
+}
+}
+@media (max-width:538px) {
+  .arrow-icon {
+	position: absolute;
+	top: 160%;
+	left: 76%;
+}
+}
+@media (max-width:460px) {
+    .hero-area h1{
+    font-size: 36px;
+  }
+  .hero-area span{
+    font-size: 30px;
+  }
+  .footer-area h3{
+    font-size: 20px;
+  }
+  .branding-logo-name{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    align-items: center;
+  }
+  .branding-section h2{
+    text-align: center;
+  }
+  .project-area h2{
+    font-size: 30px;
+  }
+  .project-content h3{
+    font-size: 30px;
+  }
+  .footer-area h2{
+    font-size: 30px;
+  }
+  .arrow-icon {
+	position: absolute;
+	top: 150%;
+	left: 76%;
+}
+ #copyright-area{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+@media (max-width:360px) {
+  .arrow-icon{
+   display: none;
+  }
+}
+
+
+
+
+
+
+
+
